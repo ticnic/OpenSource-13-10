@@ -9,7 +9,7 @@
 ## 项目介绍 ##
 ### memcached ###
 #### 简介 ####
-memcached是一套分布式的高速缓存系统，由LiveJournal的Brad Fitzpatrick开发，目前被许多网站使用。这是一套开放源代码软件，以BSD license授权发布。
+memcached是一套分布式的高速缓存系统，由LiveJournal的Brad Fitzpatrick开发，目前被许多网站所使用。这是一套开放源代码软件，以BSD license授权发布。
 memcached缺乏认证以及安全管制，这代表应该将memcached服务器放置在防火墙后。
 memcached的API使用三十二比特的循环冗余校验（CRC-32）计算键值后，将数据分散在不同的机器上。当表格满了以后，接下来新增的数据会以LRU机制替换掉。由于memcached通常只是当作高速缓存系统使用，所以使用memcached的应用程序在写回较慢的系统时（像是后端的数据库）需要额外的代码更新memcached内的数据。
 
